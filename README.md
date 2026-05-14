@@ -1,163 +1,167 @@
 # Gengo Library
 
-La bibliothèque publique de livres japonais pour Gengo.
+La bibliothèque publique de littérature japonaise classique pour Gengo.
 
-Ce dépôt contient :
-- Le **pipeline d'ingestion** : un script Python qui prend un .epub japonais et produit du JSON tokenisé prêt à être servi en ligne.
-- Les **livres déjà traités** (dossier `books/`) et leur **catalogue** (`catalog.json`).
-- (Plus tard) le site web qui sert ces livres.
+Ce dépôt contient deux choses :
 
-## Installation (Windows / Mac / Linux)
+- Un **pipeline d'ingestion Python** (`ingest.py`, `aozora.py`) qui télécharge des textes du domaine public depuis Aozora Bunko, les tokenise, et produit du JSON prêt à servir.
+- Un **site web statique** (dans `public/`) qui sert ces livres avec un lecteur interactif mot-à-mot, en trois langues (français, anglais, mandarin).
 
-Tu as juste besoin de Python 3.10+. Aucune dépendance native, aucun compilateur, rien à installer en dehors de pip.
+## Structure du dépôt
 
-```bash
-# 1. Cloner le dépôt
-git clone https://github.com/notpoofie/gengo-library.git
-cd gengo-library
-
-# 2. Installer les dépendances Python
-pip install -r requirements.txt
+```
+gengo-library/
+├── ingest.py              ← Pipeline EPUB → JSON tokenisé
+├── aozora.py              ← Téléchargeur Aozora Bunko
+├── requirements.txt
+├── DEPLOY.md              ← Guide déploiement Cloudflare
+├── README.md              ← Ce fichier
+└── public/                ← Le site web (servi tel quel par Cloudflare)
+    ├── index.html         ← Page d'accueil avec catalogue
+    ├── book.html          ← Page d'un livre (résumé + table des matières)
+    ├── read.html          ← Lecteur de chapitre
+    ├── catalog.json       ← Index global des livres
+    ├── books/             ← Dossier par livre
+    │   └── <id>/
+    │       ├── meta.json
+    │       ├── chapter-001.json
+    │       └── ...
+    ├── css/
+    │   └── site.css
+    ├── js/
+    │   ├── i18n.js        ← Système trilingue
+    │   ├── catalog.js     ← Logique de la page d'accueil
+    │   ├── book.js        ← Logique de la page livre
+    │   ├── read.js        ← Logique du lecteur
+    │   └── reader.js      ← Rendu mot-à-mot et popups
+    └── i18n/
+        ├── fr.json
+        ├── en.json
+        └── zh.json
 ```
 
-C'est tout. La première installation télécharge ~72 Mo (le dictionnaire japonais SudachiDict) mais ne demande aucun compilateur.
+## Installation (cross-platform : Windows, Mac, Linux)
 
-## Démarrage rapide : importer les 5 livres recommandés
+```bash
+git clone https://github.com/notpoofie/gengo-library.git
+cd gengo-library
+pip install -r requirements.txt
+# Premier lancement : télécharge ~72 Mo de dictionnaire japonais
+```
 
-Pour télécharger automatiquement les 5 livres recommandés depuis Aozora Bunko, les nettoyer, et les passer dans le pipeline d'un seul coup :
+## Utilisation
+
+### Démarrage rapide : importer les 5 livres recommandés
 
 ```bash
 python aozora.py --preset starter
 ```
 
-Le script télécharge depuis aozora.gr.jp, gère le décodage Shift-JIS, nettoie le balisage Aozora (ruby, gaiji, notes), construit un EPUB temporaire dans `.epub-cache/`, lance `ingest.py` dessus, et remplit les métadonnées trilingues (titre/auteur/résumé en français, anglais, mandarin).
+Télécharge et ingère les 5 livres recommandés. Les fichiers JSON apparaissent dans `public/books/`.
 
-Les 5 livres :
+### Tester le site localement
 
-| Niveau | Titre | Auteur | Notes |
-|---|---|---|---|
-| Débutant | 桃太郎 | Kusuyama Masao | Conte populaire, idéal pour valider |
-| Débutant | 蜘蛛の糸 | Akutagawa Ryūnosuke | Court (~5 pages), classique |
-| Intermédiaire | 注文の多い料理店 | Miyazawa Kenji | Nouvelle fantastique |
-| Intermédiaire | 走れメロス | Dazai Osamu | Histoire d'amitié célèbre |
-| Avancé | 坊っちゃん | Natsume Sōseki | Roman complet, ~150 pages |
+```bash
+cd public
+python3 -m http.server 8000
+# Ouvre http://localhost:8000 dans ton navigateur
+```
 
-Pour télécharger un livre Aozora arbitraire :
+### Ajouter un livre Aozora Bunko
 
 ```bash
 python aozora.py \
-    --url https://www.aozora.gr.jp/cards/000879/files/100_15253.html \
-    --id momotaro-akutagawa \
-    --level intermediate \
-    --title-fr "Momotarō (Akutagawa)" \
+    --url https://www.aozora.gr.jp/cards/000879/files/92_14545.html \
+    --id kumo-no-ito \
+    --level beginner \
+    --title-fr "Le Fil de l'araignée" \
     --author-fr "Akutagawa Ryūnosuke"
 ```
 
-Pense à compléter les traductions trilingues dans `books/<id>/meta.json` après coup pour ces imports manuels.
-
-## Utilisation manuelle du pipeline
+### Ajouter ton propre EPUB
 
 ```bash
-# Ingérer un livre EPUB
-python ingest.py chemin/vers/kokoro.epub --id kokoro-soseki --level advanced
-
-# Le script crée :
-#   books/kokoro-soseki/meta.json           ← métadonnées du livre
-#   books/kokoro-soseki/chapter-001.json    ← un fichier par chapitre, tokenisé
-#   books/kokoro-soseki/chapter-002.json
-#   ...
-#   catalog.json                            ← index global mis à jour
+python ingest.py /chemin/vers/livre.epub --id mon-livre --level intermediate
 ```
 
-### Options
+Le pipeline crée un dossier `public/books/mon-livre/` avec le contenu tokenisé. Les traductions des métadonnées (titre, auteur, résumé dans chaque langue) sont laissées vides — tu dois les compléter manuellement dans `public/books/mon-livre/meta.json`.
 
-| Option | Description | Défaut |
+### Déployer en ligne sur Cloudflare Pages
+
+Voir [DEPLOY.md](DEPLOY.md).
+
+## Sources autorisées
+
+⚠️ **Seuls les textes du domaine public** peuvent être hébergés publiquement.
+
+| Source | Statut | Notes |
 |---|---|---|
-| `--id` | Identifiant du livre (slug URL). | dérivé du titre |
-| `--level` | `beginner`, `intermediate`, `advanced` | `intermediate` |
-| `--license` | `public_domain`, `cc_by`, `original`... | `public_domain` |
-| `--out` | Dossier racine de la bibliothèque | dossier du script |
+| Aozora Bunko (auteur † avant 1955) | ✅ Domaine public | Source principale du projet |
+| Wikipédia japonais | ✅ Creative Commons | Articles utilisables avec attribution |
+| Vos propres écrits | ✅ Selon votre choix | À vous de mettre une licence claire |
+| Auteurs récents (Mishima, Kawabata, Murakami…) | ❌ Sous copyright | Usage personnel uniquement, pas d'hébergement |
 
-### Après l'ingestion
+Règle simple : **l'auteur doit être mort depuis plus de 70 ans** pour que le texte soit du domaine public au Japon.
 
-Le script laisse les **traductions de titres et résumés vides** (français, anglais, mandarin). Tu dois les remplir manuellement dans `books/<id>/meta.json` avant de publier le livre. C'est une étape volontairement séparée pour garder le contrôle de la qualité éditoriale.
+## Format JSON
 
-## Format des fichiers générés
-
-### `catalog.json`
-
-L'index principal de la bibliothèque. Une seule ressource à charger côté client pour découvrir tous les livres disponibles.
+### `catalog.json` (racine)
 
 ```json
 {
   "version": 1,
-  "updated_at": "2026-05-13T...",
+  "updated_at": "2026-05-14T...",
   "books": [
     {
-      "id": "kokoro-soseki",
-      "title": { "ja": "こころ", "fr": "Le Pauvre cœur des hommes", "en": "Kokoro", "zh": "心" },
-      "author": { "ja": "夏目漱石", "fr": "Natsume Sōseki", ... },
+      "id": "kumo-no-ito",
+      "title": { "ja": "蜘蛛の糸", "fr": "Le Fil de l'araignée", "en": "The Spider's Thread", "zh": "蜘蛛之丝" },
+      "author": { "ja": "芥川龍之介", "fr": "Akutagawa Ryūnosuke", ... },
       "summary": { "fr": "...", "en": "...", "zh": "..." },
-      "level": "advanced",
+      "level": "beginner",
       "license": "public_domain",
-      "language": "ja",
-      "chapters_count": 110,
-      "tokens_count": 142503,
-      "path": "books/kokoro-soseki/meta.json"
+      "chapters_count": 2,
+      "tokens_count": 1808,
+      "path": "books/kumo-no-ito/meta.json"
     }
   ]
 }
 ```
 
-### `books/<id>/meta.json`
-
-Tout ce qu'il faut pour afficher la page du livre et naviguer les chapitres.
-
 ### `books/<id>/chapter-NNN.json`
-
-Le contenu d'un chapitre tokenisé. Format compact :
 
 ```json
 {
   "id": "ch1",
   "index": 1,
-  "title": "上 一",
+  "title": "一",
   "paragraphs": [
     {
       "tokens": [
-        { "surface": "私", "reading": "わたくし", "lemma": "私", "pos": "代名詞" },
-        { "surface": "は", "reading": "は", "lemma": "は", "pos": "助詞" },
-        ...
+        { "surface": "ある", "reading": "ある", "lemma": "ある", "pos": "連体詞" },
+        { "surface": "日", "reading": "ひ", "lemma": "日", "pos": "名詞" }
       ]
-    },
-    ...
+    }
   ]
 }
 ```
 
-- **surface** : le mot tel qu'écrit dans le texte
-- **reading** : la lecture en hiragana
-- **lemma** : la forme de dictionnaire (à envoyer à Jisho)
-- **pos** : la classe grammaticale en japonais (traduite côté client via le système i18n)
+- `surface` : le mot tel qu'écrit dans le texte
+- `reading` : la lecture en hiragana
+- `lemma` : la forme du dictionnaire (envoyée à Jisho au clic)
+- `pos` : la classe grammaticale en japonais (traduite côté client)
 
-## Sources de livres
+## Architecture du site
 
-Pour la version publique de la bibliothèque, on utilise uniquement des **livres du domaine public**. Sources recommandées :
+Le site est **100% statique** — pas de serveur, pas de base de données. Tout est servi tel quel par Cloudflare Pages.
 
-- **[Aozora Bunko](https://www.aozora.gr.jp/)** — Le « Project Gutenberg japonais ». Des milliers de classiques (Sōseki, Akutagawa, Dazai, Tanizaki...) en téléchargement libre. La plupart ne sont pas en .epub mais en .zip de texte brut — il faudra un convertisseur ou un autre outil pour ceux-là.
-- **[Standard Ebooks](https://standardebooks.org/)** — Ne couvre pas vraiment le japonais mais le format epub est de bonne qualité.
-- **Tes propres écrits** ou ceux d'auteur·rice·s qui t'autorisent à les inclure.
+- `index.html` charge `catalog.json` pour afficher la grille de livres
+- `book.html?id=X` charge `books/X/meta.json` pour afficher la page d'un livre
+- `read.html?id=X&ch=N` charge `books/X/chapter-NNN.json` et le rend mot-à-mot
 
-⚠️ Ne **jamais** ingérer un livre sous copyright actif pour publication. Pour ton usage personnel via l'app client (import EPUB), aucun problème — ça reste chez toi.
+Le système i18n cherche `?lang=` dans l'URL puis dans localStorage, sinon utilise le français par défaut. Le choix est préservé entre les pages.
 
-## Pourquoi SudachiPy plutôt que MeCab ?
+## Pourquoi pas de tokenizer côté serveur web ?
 
-| | SudachiPy | MeCab |
-|---|---|---|
-| Installation Windows | `pip install` (1 commande) | Demande un compilateur C++ |
-| Taille | ~72 Mo | ~5-50 Mo selon dico |
-| Précision | Très bonne | Excellente |
-| Vitesse | ~bonne | Plus rapide |
-| Dictionnaire | Tenu à jour, moderne | Multiples options, parfois datées |
+Les livres sont **pré-tokenisés** par le pipeline Python avant publication. Le site web n'a pas besoin de tokenizer JavaScript — il sert juste du JSON déjà préparé. C'est plus rapide à charger (~10 Ko par chapitre) et tout marche hors-ligne après le premier chargement.
 
-On a choisi SudachiPy pour la facilité d'installation cross-platform. Si plus tard on passe à du gros volume, on peut basculer sur MeCab côté Linux/CI.
+L'app cliente Gengo (séparée de ce dépôt) embarque kuromoji.js pour tokeniser les EPUB importés par l'utilisateur en local, mais pour les livres du catalogue elle se contente de charger les JSON depuis cette bibliothèque.

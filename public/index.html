@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gengo Bibliothèque</title>
+<meta name="description" content="Bibliothèque de littérature japonaise classique avec analyse interactive mot-à-mot.">
+<link rel="stylesheet" href="css/site.css">
+<script src="js/i18n.js" defer></script>
+<script src="js/catalog.js" defer></script>
+</head>
+<body>
+
+<header class="site-header">
+  <a href="index.html" class="brand">
+    <span class="brand-mark">言</span>
+    <span class="brand-name" data-i18n="site.title">Gengo Bibliothèque</span>
+    <span class="tagline" data-i18n="site.tagline">Lecture interactive en japonais — domaine public</span>
+  </a>
+  <div class="lang-switcher">
+    <button data-lang="fr" type="button">FR</button>
+    <button data-lang="en" type="button">EN</button>
+    <button data-lang="zh" type="button">中</button>
+  </div>
+</header>
+
+<main>
+  <h1 data-i18n="catalog.heading">Catalogue</h1>
+  <p class="lead" data-i18n="site.tagline">Lecture interactive en japonais — domaine public</p>
+
+  <div class="filter-bar" id="filter-bar">
+    <span class="filter-label" data-i18n="filter.all_levels">Tous niveaux</span>
+    <button data-level="all" class="active" data-i18n="filter.all_levels">Tous niveaux</button>
+    <button data-level="beginner" data-i18n="filter.beginner">Débutant</button>
+    <button data-level="intermediate" data-i18n="filter.intermediate">Intermédiaire</button>
+    <button data-level="advanced" data-i18n="filter.advanced">Avancé</button>
+  </div>
+
+  <div id="book-grid" class="book-grid">
+    <p class="loading">…</p>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div>
+      <h3 data-i18n="footer.about">À propos</h3>
+      <p data-i18n="footer.about_text">Gengo Bibliothèque est une collection de textes japonais classiques pré-analysés. Cliquez sur n'importe quel mot pour voir sa lecture et sa forme du dictionnaire.</p>
+    </div>
+    <div>
+      <h3 data-i18n="footer.sources">Sources</h3>
+      <p data-i18n="footer.sources_text">Tous les textes proviennent d'Aozora Bunko et sont du domaine public.</p>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

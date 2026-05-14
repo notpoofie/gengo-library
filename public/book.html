@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gengo Bibliothèque</title>
+<link rel="stylesheet" href="css/site.css">
+<script src="js/i18n.js" defer></script>
+<script src="js/book.js" defer></script>
+</head>
+<body>
+
+<header class="site-header">
+  <a href="index.html" class="brand">
+    <span class="brand-mark">言</span>
+    <span class="brand-name" data-i18n="site.title">Gengo Bibliothèque</span>
+  </a>
+  <div class="lang-switcher">
+    <button data-lang="fr" type="button">FR</button>
+    <button data-lang="en" type="button">EN</button>
+    <button data-lang="zh" type="button">中</button>
+  </div>
+</header>
+
+<main>
+  <p><a id="back-link" href="index.html" data-i18n="book.back_to_catalog">← Retour au catalogue</a></p>
+  <div id="book-content" class="loading">…</div>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div>
+      <h3 data-i18n="footer.about">À propos</h3>
+      <p data-i18n="footer.about_text"></p>
+    </div>
+    <div>
+      <h3 data-i18n="footer.sources">Sources</h3>
+      <p data-i18n="footer.sources_text"></p>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

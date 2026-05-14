@@ -266,9 +266,15 @@ def process_book(
     book_id: str | None = None,
     level: str = 'intermediate',
     license_tag: str = 'public_domain',
+    public_dir_name: str = 'public',
 ) -> dict:
     """Pipeline complet pour un livre. Retourne l'entrée de catalogue
-    à insérer dans catalog.json."""
+    à insérer dans catalog.json.
+
+    Les fichiers sont écrits sous out_root/public_dir_name/books/<id>/
+    afin que la racine publique du site (le dossier 'public/') soit
+    directement servie par Cloudflare Pages sans étape de build supplémentaire.
+    """
     print(f"\n=== {epub_path.name} ===")
     print("Lecture de l'EPUB...")
     data = read_epub(epub_path)
@@ -286,8 +292,10 @@ def process_book(
     print(f"  Auteur : {meta['author_ja']}")
     print(f"  Chapitres : {len(chapters)}")
 
-    # Prepare output dir
-    book_dir = out_root / 'books' / book_id
+    # Prepare output dir under public/ so the result can be served as-is
+    public_root = out_root / public_dir_name
+    public_root.mkdir(parents=True, exist_ok=True)
+    book_dir = public_root / 'books' / book_id
     book_dir.mkdir(parents=True, exist_ok=True)
 
     # Tokenize chapter by chapter
@@ -376,9 +384,11 @@ def process_book(
     return catalog_entry
 
 
-def update_catalog(out_root: Path, entry: dict):
+def update_catalog(out_root: Path, entry: dict, public_dir_name: str = 'public'):
     """Add or replace a book entry in catalog.json."""
-    catalog_path = out_root / 'catalog.json'
+    public_root = out_root / public_dir_name
+    public_root.mkdir(parents=True, exist_ok=True)
+    catalog_path = public_root / 'catalog.json'
     if catalog_path.exists():
         catalog = json.loads(catalog_path.read_text(encoding='utf-8'))
     else:
@@ -450,7 +460,7 @@ def main():
         return 1
 
     print("\nTerminé. Pense à compléter les traductions des titres/résumés ")
-    print(f"dans books/{entry['id']}/meta.json avant de publier.")
+    print(f"dans public/books/{entry['id']}/meta.json avant de publier.")
     return 0
 
 

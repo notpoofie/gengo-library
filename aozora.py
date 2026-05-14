@@ -88,7 +88,7 @@ STARTER_BOOKS = [
     {
         # Le Restaurant aux nombreuses commandes — Miyazawa Kenji
         # https://www.aozora.gr.jp/cards/000081/card1927.html
-        'url': 'https://www.aozora.gr.jp/cards/000081/files/1927_19924.html',
+        'url': 'https://www.aozora.gr.jp/cards/000081/files/1927_17906.html',
         'id': 'chumon-no-oi-ryoriten',
         'level': 'intermediate',
         'title_ja': '注文の多い料理店',
@@ -461,8 +461,8 @@ def process_one(book: dict, work_dir: Path, repo_root: Path):
             print(result.stderr, file=sys.stderr)
         raise RuntimeError("ingest.py a échoué")
 
-    # 8. Fill in the translations in meta.json
-    meta_path = repo_root / 'books' / book['id'] / 'meta.json'
+    # 8. Fill in the translations in meta.json (now under public/)
+    meta_path = repo_root / 'public' / 'books' / book['id'] / 'meta.json'
     import json
     meta = json.loads(meta_path.read_text(encoding='utf-8'))
     meta['title']['fr'] = book['title_fr']
@@ -480,7 +480,7 @@ def process_one(book: dict, work_dir: Path, repo_root: Path):
     )
 
     # 9. Also update the catalog entry with the new translations
-    catalog_path = repo_root / 'catalog.json'
+    catalog_path = repo_root / 'public' / 'catalog.json'
     catalog = json.loads(catalog_path.read_text(encoding='utf-8'))
     for entry in catalog['books']:
         if entry['id'] == book['id']:
@@ -529,7 +529,7 @@ def main():
                 print(f"  [ECHEC] Échec pour {book['id']}: {e}", file=sys.stderr)
                 import traceback
                 traceback.print_exc()
-        print(f"\nTerminé. Vérifie les résultats dans {repo_root / 'books'}/")
+        print(f"\nTerminé. Vérifie les résultats dans {repo_root / 'public' / 'books'}/")
         return 0
 
     if args.url and args.id:
