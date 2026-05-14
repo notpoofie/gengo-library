@@ -1,0 +1,32 @@
+{
+  "version": 1,
+  "updated_at": "2026-05-14T16:44:27.269097+00:00",
+  "books": [
+    {
+      "id": "kokoro-test",
+      "title": {
+        "ja": "こころ",
+        "fr": "",
+        "en": "",
+        "zh": ""
+      },
+      "author": {
+        "ja": "夏目漱石",
+        "fr": "夏目漱石",
+        "en": "夏目漱石",
+        "zh": "夏目漱石"
+      },
+      "summary": {
+        "fr": "",
+        "en": "",
+        "zh": ""
+      },
+      "level": "advanced",
+      "license": "public_domain",
+      "language": "ja",
+      "chapters_count": 2,
+      "tokens_count": 113,
+      "path": "books/kokoro-test/meta.json"
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "id": "kokoro-test",
+  "title": {
+    "ja": "こころ",
+    "fr": "",
+    "en": "",
+    "zh": ""
+  },
+  "author": {
+    "ja": "夏目漱石",
+    "fr": "夏目漱石",
+    "en": "夏目漱石",
+    "zh": "夏目漱石"
+  },
+  "summary": {
+    "fr": "",
+    "en": "",
+    "zh": ""
+  },
+  "language": "ja",
+  "level": "advanced",
+  "license": "public_domain",
+  "identifier": "kokoro-test-001",
+  "chapters_count": 2,
+  "tokens_count": 113,
+  "ingested_at": "2026-05-14T16:44:27.262948+00:00",
+  "chapters": [
+    {
+      "index": 1,
+      "title": "上 一",
+      "file": "chapter-001.json",
+      "paragraphs_count": 3
+    },
+    {
+      "index": 2,
+      "title": "上 二",
+      "file": "chapter-002.json",
+      "paragraphs_count": 2
+    }
+  ]
+}
