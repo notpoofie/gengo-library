@@ -95,6 +95,15 @@ def strip_html_to_paragraphs(xhtml: str) -> list[str]:
     # HTML entities
     text = text.replace('&amp;', '&').replace('&lt;', '<').replace('&gt;', '>')
     text = text.replace('&quot;', '"').replace('&#39;', "'").replace('&nbsp;', ' ')
+    # Aozora-style fallback: kanji followed by hiragana in parentheses,
+    # like "御釈迦様（おしゃかさま）". Strip the parenthetical reading
+    # so the tokenizer doesn't see it as separate words.
+    text = re.sub(
+        r'([\u4E00-\u9FFF\u3400-\u4DBF])[（(]['
+        r'\u3040-\u309F\u30A0-\u30FFー]+[）)]',
+        r'\1',
+        text,
+    )
     # Normalize whitespace per paragraph
     paragraphs = []
     for line in text.split('\n'):

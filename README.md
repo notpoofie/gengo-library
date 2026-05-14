@@ -22,7 +22,40 @@ pip install -r requirements.txt
 
 C'est tout. La première installation télécharge ~72 Mo (le dictionnaire japonais SudachiDict) mais ne demande aucun compilateur.
 
-## Utilisation
+## Démarrage rapide : importer les 5 livres recommandés
+
+Pour télécharger automatiquement les 5 livres recommandés depuis Aozora Bunko, les nettoyer, et les passer dans le pipeline d'un seul coup :
+
+```bash
+python aozora.py --preset starter
+```
+
+Le script télécharge depuis aozora.gr.jp, gère le décodage Shift-JIS, nettoie le balisage Aozora (ruby, gaiji, notes), construit un EPUB temporaire dans `.epub-cache/`, lance `ingest.py` dessus, et remplit les métadonnées trilingues (titre/auteur/résumé en français, anglais, mandarin).
+
+Les 5 livres :
+
+| Niveau | Titre | Auteur | Notes |
+|---|---|---|---|
+| Débutant | 桃太郎 | Kusuyama Masao | Conte populaire, idéal pour valider |
+| Débutant | 蜘蛛の糸 | Akutagawa Ryūnosuke | Court (~5 pages), classique |
+| Intermédiaire | 注文の多い料理店 | Miyazawa Kenji | Nouvelle fantastique |
+| Intermédiaire | 走れメロス | Dazai Osamu | Histoire d'amitié célèbre |
+| Avancé | 坊っちゃん | Natsume Sōseki | Roman complet, ~150 pages |
+
+Pour télécharger un livre Aozora arbitraire :
+
+```bash
+python aozora.py \
+    --url https://www.aozora.gr.jp/cards/000879/files/100_15253.html \
+    --id momotaro-akutagawa \
+    --level intermediate \
+    --title-fr "Momotarō (Akutagawa)" \
+    --author-fr "Akutagawa Ryūnosuke"
+```
+
+Pense à compléter les traductions trilingues dans `books/<id>/meta.json` après coup pour ces imports manuels.
+
+## Utilisation manuelle du pipeline
 
 ```bash
 # Ingérer un livre EPUB
