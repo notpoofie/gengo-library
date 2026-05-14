@@ -35,6 +35,16 @@ from datetime import datetime, timezone
 from pathlib import Path
 from xml.etree import ElementTree as ET
 
+# Windows consoles default to cp932 (when Japanese locale) or cp1252 (French),
+# neither of which can encode every character we print. Reconfiguring stdout
+# to UTF-8 fixes this — print() works, the file system isn't affected.
+if sys.stdout.encoding and sys.stdout.encoding.lower() != 'utf-8':
+    try:
+        sys.stdout.reconfigure(encoding='utf-8', errors='replace')
+        sys.stderr.reconfigure(encoding='utf-8', errors='replace')
+    except (AttributeError, Exception):
+        pass
+
 from sudachipy import dictionary, tokenizer
 
 
@@ -348,7 +358,7 @@ def process_book(
         encoding='utf-8',
     )
 
-    print(f"  ✓ {total_tokens:,} tokens écrits dans {book_dir.relative_to(out_root)}")
+    print(f"  [OK] {total_tokens:,} tokens écrits dans {book_dir.relative_to(out_root)}")
 
     # Catalog entry (smaller version of book_meta for the index)
     catalog_entry = {
@@ -388,7 +398,7 @@ def update_catalog(out_root: Path, entry: dict):
         json.dumps(catalog, ensure_ascii=False, indent=2),
         encoding='utf-8',
     )
-    print(f"  ✓ catalog.json mis à jour ({len(catalog['books'])} livre(s) au total)")
+    print(f"  [OK] catalog.json mis à jour ({len(catalog['books'])} livre(s) au total)")
 
 
 # ============================================================

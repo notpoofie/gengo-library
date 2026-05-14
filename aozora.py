@@ -19,12 +19,22 @@ Usage:
 
 import argparse
 import io
+import os
 import re
 import subprocess
 import sys
 import urllib.request
 import zipfile
 from pathlib import Path
+
+# Windows consoles default to cp932 / cp1252 which can't encode every
+# character we print. Force UTF-8 so emojis and accents work.
+if sys.stdout.encoding and sys.stdout.encoding.lower() != 'utf-8':
+    try:
+        sys.stdout.reconfigure(encoding='utf-8', errors='replace')
+        sys.stderr.reconfigure(encoding='utf-8', errors='replace')
+    except (AttributeError, Exception):
+        pass
 
 
 # ============================================================
@@ -429,17 +439,26 @@ def process_one(book: dict, work_dir: Path, repo_root: Path):
 
     # 7. Run ingest.py
     print("  Lancement du pipeline d'ingestion...")
+    # Force UTF-8 in the subprocess too, otherwise on Windows the child
+    # process's stdout may use cp932/cp1252 and crash on the first emoji
+    # or accented character it tries to print.
+    env = dict(os.environ, PYTHONIOENCODING='utf-8', PYTHONUTF8='1')
     result = subprocess.run(
         [sys.executable, str(repo_root / 'ingest.py'),
          str(epub_path),
          '--id', book['id'],
          '--level', book['level'],
          '--out', str(repo_root)],
-        capture_output=True, text=True,
+        capture_output=True, text=True, encoding='utf-8', errors='replace',
+        env=env,
     )
+    # Always show the subprocess output so we see what ingest.py reported
+    if result.stdout:
+        for line in result.stdout.splitlines():
+            print(f"    {line}")
     if result.returncode != 0:
-        print(result.stdout)
-        print(result.stderr, file=sys.stderr)
+        if result.stderr:
+            print(result.stderr, file=sys.stderr)
         raise RuntimeError("ingest.py a échoué")
 
     # 8. Fill in the translations in meta.json
@@ -472,7 +491,7 @@ def process_one(book: dict, work_dir: Path, repo_root: Path):
         json.dumps(catalog, ensure_ascii=False, indent=2),
         encoding='utf-8',
     )
-    print(f"  ✓ Métadonnées trilingues écrites pour {book['id']}")
+    print(f"  [OK] Métadonnées trilingues écrites pour {book['id']}")
 
 
 # ============================================================
@@ -507,7 +526,7 @@ def main():
             try:
                 process_one(book, work_dir, repo_root)
             except Exception as e:
-                print(f"  ✗ Échec pour {book['id']}: {e}", file=sys.stderr)
+                print(f"  [ECHEC] Échec pour {book['id']}: {e}", file=sys.stderr)
                 import traceback
                 traceback.print_exc()
         print(f"\nTerminé. Vérifie les résultats dans {repo_root / 'books'}/")
