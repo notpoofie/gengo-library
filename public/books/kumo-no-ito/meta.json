@@ -1,0 +1,47 @@
+{
+  "id": "kumo-no-ito",
+  "title": {
+    "ja": "蜘蛛の糸",
+    "fr": "Le Fil de l'araignée",
+    "en": "The Spider's Thread",
+    "zh": "蜘蛛之丝"
+  },
+  "author": {
+    "ja": "芥川龍之介",
+    "fr": "Akutagawa Ryūnosuke",
+    "en": "Ryūnosuke Akutagawa",
+    "zh": "芥川龙之介"
+  },
+  "summary": {
+    "fr": "Bouddha offre une seconde chance à un brigand damné en enfer en lui tendant un fil d'araignée.",
+    "en": "The Buddha offers a damned thief a chance at salvation by lowering a spider's thread from paradise.",
+    "zh": "释迦牟尼向地狱中的恶人递下一根蜘蛛丝，给予他改过自新的机会。"
+  },
+  "language": "ja",
+  "level": "beginner",
+  "license": "public_domain",
+  "identifier": "aozora-kumo-no-ito",
+  "chapters_count": 3,
+  "tokens_count": 1808,
+  "ingested_at": "2026-05-16T02:26:19.945904+00:00",
+  "chapters": [
+    {
+      "index": 1,
+      "title": "一",
+      "file": "chapter-001.json",
+      "paragraphs_count": 4
+    },
+    {
+      "index": 2,
+      "title": "二",
+      "file": "chapter-002.json",
+      "paragraphs_count": 8
+    },
+    {
+      "index": 3,
+      "title": "三",
+      "file": "chapter-003.json",
+      "paragraphs_count": 3
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "id": "hashire-melos",
+  "title": {
+    "ja": "走れメロス",
+    "fr": "Cours, Melos !",
+    "en": "Run, Melos!",
+    "zh": "奔跑吧，梅勒斯"
+  },
+  "author": {
+    "ja": "太宰治",
+    "fr": "Dazai Osamu",
+    "en": "Osamu Dazai",
+    "zh": "太宰治"
+  },
+  "summary": {
+    "fr": "Melos doit traverser la campagne et revenir avant le coucher du soleil pour sauver la vie de son ami otage du tyran.",
+    "en": "Melos must race across the countryside and return before sunset to save his friend, held hostage by a tyrant.",
+    "zh": "梅勒斯必须穿越乡野，在日落之前归来，以救出被暴君扣为人质的朋友。"
+  },
+  "language": "ja",
+  "level": "intermediate",
+  "license": "public_domain",
+  "identifier": "aozora-hashire-melos",
+  "chapters_count": 1,
+  "tokens_count": 6439,
+  "ingested_at": "2026-05-16T02:26:22.090384+00:00",
+  "chapters": [
+    {
+      "index": 1,
+      "title": "第1章",
+      "file": "chapter-001.json",
+      "paragraphs_count": 75
+    }
+  ]
+}

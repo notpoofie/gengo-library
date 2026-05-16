@@ -1,5 +1,136 @@
 {
   "version": 1,
-  "updated_at": "",
-  "books": []
+  "updated_at": "2026-05-16T02:26:24.198194+00:00",
+  "books": [
+    {
+      "id": "botchan",
+      "title": {
+        "ja": "坊っちゃん",
+        "fr": "Botchan",
+        "en": "Botchan",
+        "zh": "哥儿"
+      },
+      "author": {
+        "ja": "夏目漱石",
+        "fr": "Natsume Sōseki",
+        "en": "Natsume Sōseki",
+        "zh": "夏目漱石"
+      },
+      "summary": {
+        "fr": "Un jeune Tokyoïte impétueux part enseigner les mathématiques dans une école de campagne à Shikoku — et y croise des collègues plus retors les uns que les autres.",
+        "en": "A hot-headed young man from Tokyo takes a math-teaching post at a country school in Shikoku — and finds his colleagues more devious than expected.",
+        "zh": "一名出身东京的莽撞青年前往四国乡村学校任数学教师，却发现同事一个比一个狡猾。"
+      },
+      "level": "advanced",
+      "license": "public_domain",
+      "language": "ja",
+      "chapters_count": 11,
+      "tokens_count": 57226,
+      "path": "books/botchan/meta.json"
+    },
+    {
+      "id": "chumon-no-oi-ryoriten",
+      "title": {
+        "ja": "注文の多い料理店",
+        "fr": "Le Restaurant aux nombreuses commandes",
+        "en": "The Restaurant of Many Orders",
+        "zh": "要求众多的餐厅"
+      },
+      "author": {
+        "ja": "宮沢賢治",
+        "fr": "Miyazawa Kenji",
+        "en": "Kenji Miyazawa",
+        "zh": "宫泽贤治"
+      },
+      "summary": {
+        "fr": "Deux chasseurs perdus dans la montagne tombent sur un restaurant occidental étrange dont les exigences se font de plus en plus inquiétantes.",
+        "en": "Two hunters lost in the mountains stumble upon a strange Western-style restaurant whose demands grow ever more disquieting.",
+        "zh": "两个迷失在山中的猎人偶然发现一家奇怪的西式餐厅，其要求愈发令人不安。"
+      },
+      "level": "intermediate",
+      "license": "public_domain",
+      "language": "ja",
+      "chapters_count": 1,
+      "tokens_count": 3512,
+      "path": "books/chumon-no-oi-ryoriten/meta.json"
+    },
+    {
+      "id": "hashire-melos",
+      "title": {
+        "ja": "走れメロス",
+        "fr": "Cours, Melos !",
+        "en": "Run, Melos!",
+        "zh": "奔跑吧，梅勒斯"
+      },
+      "author": {
+        "ja": "太宰治",
+        "fr": "Dazai Osamu",
+        "en": "Osamu Dazai",
+        "zh": "太宰治"
+      },
+      "summary": {
+        "fr": "Melos doit traverser la campagne et revenir avant le coucher du soleil pour sauver la vie de son ami otage du tyran.",
+        "en": "Melos must race across the countryside and return before sunset to save his friend, held hostage by a tyrant.",
+        "zh": "梅勒斯必须穿越乡野，在日落之前归来，以救出被暴君扣为人质的朋友。"
+      },
+      "level": "intermediate",
+      "license": "public_domain",
+      "language": "ja",
+      "chapters_count": 1,
+      "tokens_count": 6439,
+      "path": "books/hashire-melos/meta.json"
+    },
+    {
+      "id": "kumo-no-ito",
+      "title": {
+        "ja": "蜘蛛の糸",
+        "fr": "Le Fil de l'araignée",
+        "en": "The Spider's Thread",
+        "zh": "蜘蛛之丝"
+      },
+      "author": {
+        "ja": "芥川龍之介",
+        "fr": "Akutagawa Ryūnosuke",
+        "en": "Ryūnosuke Akutagawa",
+        "zh": "芥川龙之介"
+      },
+      "summary": {
+        "fr": "Bouddha offre une seconde chance à un brigand damné en enfer en lui tendant un fil d'araignée.",
+        "en": "The Buddha offers a damned thief a chance at salvation by lowering a spider's thread from paradise.",
+        "zh": "释迦牟尼向地狱中的恶人递下一根蜘蛛丝，给予他改过自新的机会。"
+      },
+      "level": "beginner",
+      "license": "public_domain",
+      "language": "ja",
+      "chapters_count": 3,
+      "tokens_count": 1808,
+      "path": "books/kumo-no-ito/meta.json"
+    },
+    {
+      "id": "momotaro-kusuyama",
+      "title": {
+        "ja": "桃太郎",
+        "fr": "Momotarō",
+        "en": "Momotarō",
+        "zh": "桃太郎"
+      },
+      "author": {
+        "ja": "楠山正雄",
+        "fr": "Kusuyama Masao",
+        "en": "Kusuyama Masao",
+        "zh": "楠山正雄"
+      },
+      "summary": {
+        "fr": "Le conte populaire le plus connu du Japon : un petit garçon né d'une pêche part combattre les démons de l'île d'Oni avec ses compagnons animaux.",
+        "en": "Japan's most beloved folk tale: a small boy born from a peach sets out with animal companions to defeat the demons of Onigashima.",
+        "zh": "日本最著名的民间故事：从桃中诞生的小男孩与他的动物伙伴们一起前往鬼岛打败恶魔。"
+      },
+      "level": "beginner",
+      "license": "public_domain",
+      "language": "ja",
+      "chapters_count": 4,
+      "tokens_count": 3388,
+      "path": "books/momotaro-kusuyama/meta.json"
+    }
+  ]
 }

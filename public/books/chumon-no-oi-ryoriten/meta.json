@@ -1,0 +1,35 @@
+{
+  "id": "chumon-no-oi-ryoriten",
+  "title": {
+    "ja": "注文の多い料理店",
+    "fr": "Le Restaurant aux nombreuses commandes",
+    "en": "The Restaurant of Many Orders",
+    "zh": "要求众多的餐厅"
+  },
+  "author": {
+    "ja": "宮沢賢治",
+    "fr": "Miyazawa Kenji",
+    "en": "Kenji Miyazawa",
+    "zh": "宫泽贤治"
+  },
+  "summary": {
+    "fr": "Deux chasseurs perdus dans la montagne tombent sur un restaurant occidental étrange dont les exigences se font de plus en plus inquiétantes.",
+    "en": "Two hunters lost in the mountains stumble upon a strange Western-style restaurant whose demands grow ever more disquieting.",
+    "zh": "两个迷失在山中的猎人偶然发现一家奇怪的西式餐厅，其要求愈发令人不安。"
+  },
+  "language": "ja",
+  "level": "intermediate",
+  "license": "public_domain",
+  "identifier": "aozora-chumon-no-oi-ryoriten",
+  "chapters_count": 1,
+  "tokens_count": 3512,
+  "ingested_at": "2026-05-16T02:26:20.990982+00:00",
+  "chapters": [
+    {
+      "index": 1,
+      "title": "第1章",
+      "file": "chapter-001.json",
+      "paragraphs_count": 153
+    }
+  ]
+}

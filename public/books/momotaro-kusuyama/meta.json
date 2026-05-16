@@ -1,0 +1,53 @@
+{
+  "id": "momotaro-kusuyama",
+  "title": {
+    "ja": "桃太郎",
+    "fr": "Momotarō",
+    "en": "Momotarō",
+    "zh": "桃太郎"
+  },
+  "author": {
+    "ja": "楠山正雄",
+    "fr": "Kusuyama Masao",
+    "en": "Kusuyama Masao",
+    "zh": "楠山正雄"
+  },
+  "summary": {
+    "fr": "Le conte populaire le plus connu du Japon : un petit garçon né d'une pêche part combattre les démons de l'île d'Oni avec ses compagnons animaux.",
+    "en": "Japan's most beloved folk tale: a small boy born from a peach sets out with animal companions to defeat the demons of Onigashima.",
+    "zh": "日本最著名的民间故事：从桃中诞生的小男孩与他的动物伙伴们一起前往鬼岛打败恶魔。"
+  },
+  "language": "ja",
+  "level": "beginner",
+  "license": "public_domain",
+  "identifier": "aozora-momotaro-kusuyama",
+  "chapters_count": 4,
+  "tokens_count": 3388,
+  "ingested_at": "2026-05-16T02:26:19.086808+00:00",
+  "chapters": [
+    {
+      "index": 1,
+      "title": "一",
+      "file": "chapter-001.json",
+      "paragraphs_count": 40
+    },
+    {
+      "index": 2,
+      "title": "二",
+      "file": "chapter-002.json",
+      "paragraphs_count": 32
+    },
+    {
+      "index": 3,
+      "title": "三",
+      "file": "chapter-003.json",
+      "paragraphs_count": 46
+    },
+    {
+      "index": 4,
+      "title": "四",
+      "file": "chapter-004.json",
+      "paragraphs_count": 31
+    }
+  ]
+}

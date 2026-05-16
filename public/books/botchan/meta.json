@@ -1,0 +1,95 @@
+{
+  "id": "botchan",
+  "title": {
+    "ja": "坊っちゃん",
+    "fr": "Botchan",
+    "en": "Botchan",
+    "zh": "哥儿"
+  },
+  "author": {
+    "ja": "夏目漱石",
+    "fr": "Natsume Sōseki",
+    "en": "Natsume Sōseki",
+    "zh": "夏目漱石"
+  },
+  "summary": {
+    "fr": "Un jeune Tokyoïte impétueux part enseigner les mathématiques dans une école de campagne à Shikoku — et y croise des collègues plus retors les uns que les autres.",
+    "en": "A hot-headed young man from Tokyo takes a math-teaching post at a country school in Shikoku — and finds his colleagues more devious than expected.",
+    "zh": "一名出身东京的莽撞青年前往四国乡村学校任数学教师，却发现同事一个比一个狡猾。"
+  },
+  "language": "ja",
+  "level": "advanced",
+  "license": "public_domain",
+  "identifier": "aozora-botchan",
+  "chapters_count": 11,
+  "tokens_count": 57226,
+  "ingested_at": "2026-05-16T02:26:24.187167+00:00",
+  "chapters": [
+    {
+      "index": 1,
+      "title": "一",
+      "file": "chapter-001.json",
+      "paragraphs_count": 22
+    },
+    {
+      "index": 2,
+      "title": "二",
+      "file": "chapter-002.json",
+      "paragraphs_count": 13
+    },
+    {
+      "index": 3,
+      "title": "三",
+      "file": "chapter-003.json",
+      "paragraphs_count": 8
+    },
+    {
+      "index": 4,
+      "title": "四",
+      "file": "chapter-004.json",
+      "paragraphs_count": 21
+    },
+    {
+      "index": 5,
+      "title": "五",
+      "file": "chapter-005.json",
+      "paragraphs_count": 33
+    },
+    {
+      "index": 6,
+      "title": "六",
+      "file": "chapter-006.json",
+      "paragraphs_count": 40
+    },
+    {
+      "index": 7,
+      "title": "七",
+      "file": "chapter-007.json",
+      "paragraphs_count": 67
+    },
+    {
+      "index": 8,
+      "title": "八",
+      "file": "chapter-008.json",
+      "paragraphs_count": 80
+    },
+    {
+      "index": 9,
+      "title": "九",
+      "file": "chapter-009.json",
+      "paragraphs_count": 49
+    },
+    {
+      "index": 10,
+      "title": "十",
+      "file": "chapter-010.json",
+      "paragraphs_count": 38
+    },
+    {
+      "index": 11,
+      "title": "十一",
+      "file": "chapter-011.json",
+      "paragraphs_count": 100
+    }
+  ]
+}
