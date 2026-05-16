@@ -1,0 +1,689 @@
+{
+  "id": "kokoro",
+  "title": {
+    "ja": "こころ",
+    "fr": "Le Pauvre Cœur des Hommes",
+    "en": "Kokoro",
+    "zh": "心"
+  },
+  "author": {
+    "ja": "夏目漱石",
+    "fr": "Natsume Sōseki",
+    "en": "Natsume Sōseki",
+    "zh": "夏目漱石"
+  },
+  "summary": {
+    "fr": "Un étudiant noue une amitié étrange avec un homme solitaire surnommé Sensei. Une exploration profonde de la culpabilité, de l'amitié et de la modernité japonaise.",
+    "en": "A student forms a strange friendship with a solitary man known as Sensei. A profound exploration of guilt, friendship, and Japanese modernity.",
+    "zh": "一位学生与一位名为先生的孤独男子建立起奇特的友谊。对内疚、友情与日本现代性的深刻探索。"
+  },
+  "language": "ja",
+  "level": "advanced",
+  "license": "public_domain",
+  "identifier": "aozora-kokoro",
+  "chapters_count": 110,
+  "tokens_count": 106885,
+  "ingested_at": "2026-05-16T17:36:18.818330+00:00",
+  "chapters": [
+    {
+      "index": 1,
+      "title": "一",
+      "file": "chapter-001.json",
+      "paragraphs_count": 6
+    },
+    {
+      "index": 2,
+      "title": "二",
+      "file": "chapter-002.json",
+      "paragraphs_count": 6
+    },
+    {
+      "index": 3,
+      "title": "三",
+      "file": "chapter-003.json",
+      "paragraphs_count": 7
+    },
+    {
+      "index": 4,
+      "title": "四",
+      "file": "chapter-004.json",
+      "paragraphs_count": 6
+    },
+    {
+      "index": 5,
+      "title": "五",
+      "file": "chapter-005.json",
+      "paragraphs_count": 27
+    },
+    {
+      "index": 6,
+      "title": "六",
+      "file": "chapter-006.json",
+      "paragraphs_count": 14
+    },
+    {
+      "index": 7,
+      "title": "七",
+      "file": "chapter-007.json",
+      "paragraphs_count": 19
+    },
+    {
+      "index": 8,
+      "title": "八",
+      "file": "chapter-008.json",
+      "paragraphs_count": 19
+    },
+    {
+      "index": 9,
+      "title": "九",
+      "file": "chapter-009.json",
+      "paragraphs_count": 18
+    },
+    {
+      "index": 10,
+      "title": "十",
+      "file": "chapter-010.json",
+      "paragraphs_count": 12
+    },
+    {
+      "index": 11,
+      "title": "十一",
+      "file": "chapter-011.json",
+      "paragraphs_count": 18
+    },
+    {
+      "index": 12,
+      "title": "十二",
+      "file": "chapter-012.json",
+      "paragraphs_count": 18
+    },
+    {
+      "index": 13,
+      "title": "十三",
+      "file": "chapter-013.json",
+      "paragraphs_count": 26
+    },
+    {
+      "index": 14,
+      "title": "十四",
+      "file": "chapter-014.json",
+      "paragraphs_count": 20
+    },
+    {
+      "index": 15,
+      "title": "十五",
+      "file": "chapter-015.json",
+      "paragraphs_count": 7
+    },
+    {
+      "index": 16,
+      "title": "十六",
+      "file": "chapter-016.json",
+      "paragraphs_count": 23
+    },
+    {
+      "index": 17,
+      "title": "十七",
+      "file": "chapter-017.json",
+      "paragraphs_count": 25
+    },
+    {
+      "index": 18,
+      "title": "十八",
+      "file": "chapter-018.json",
+      "paragraphs_count": 22
+    },
+    {
+      "index": 19,
+      "title": "十九",
+      "file": "chapter-019.json",
+      "paragraphs_count": 23
+    },
+    {
+      "index": 20,
+      "title": "二十",
+      "file": "chapter-020.json",
+      "paragraphs_count": 9
+    },
+    {
+      "index": 21,
+      "title": "二十一",
+      "file": "chapter-021.json",
+      "paragraphs_count": 20
+    },
+    {
+      "index": 22,
+      "title": "二十二",
+      "file": "chapter-022.json",
+      "paragraphs_count": 17
+    },
+    {
+      "index": 23,
+      "title": "二十三",
+      "file": "chapter-023.json",
+      "paragraphs_count": 10
+    },
+    {
+      "index": 24,
+      "title": "二十四",
+      "file": "chapter-024.json",
+      "paragraphs_count": 22
+    },
+    {
+      "index": 25,
+      "title": "二十五",
+      "file": "chapter-025.json",
+      "paragraphs_count": 11
+    },
+    {
+      "index": 26,
+      "title": "二十六",
+      "file": "chapter-026.json",
+      "paragraphs_count": 13
+    },
+    {
+      "index": 27,
+      "title": "二十七",
+      "file": "chapter-027.json",
+      "paragraphs_count": 25
+    },
+    {
+      "index": 28,
+      "title": "二十八",
+      "file": "chapter-028.json",
+      "paragraphs_count": 25
+    },
+    {
+      "index": 29,
+      "title": "二十九",
+      "file": "chapter-029.json",
+      "paragraphs_count": 20
+    },
+    {
+      "index": 30,
+      "title": "三十",
+      "file": "chapter-030.json",
+      "paragraphs_count": 13
+    },
+    {
+      "index": 31,
+      "title": "三十一",
+      "file": "chapter-031.json",
+      "paragraphs_count": 19
+    },
+    {
+      "index": 32,
+      "title": "三十二",
+      "file": "chapter-032.json",
+      "paragraphs_count": 14
+    },
+    {
+      "index": 33,
+      "title": "三十三",
+      "file": "chapter-033.json",
+      "paragraphs_count": 28
+    },
+    {
+      "index": 34,
+      "title": "三十四",
+      "file": "chapter-034.json",
+      "paragraphs_count": 34
+    },
+    {
+      "index": 35,
+      "title": "三十五",
+      "file": "chapter-035.json",
+      "paragraphs_count": 26
+    },
+    {
+      "index": 36,
+      "title": "三十六",
+      "file": "chapter-036.json",
+      "paragraphs_count": 8
+    },
+    {
+      "index": 37,
+      "title": "一",
+      "file": "chapter-037.json",
+      "paragraphs_count": 15
+    },
+    {
+      "index": 38,
+      "title": "二",
+      "file": "chapter-038.json",
+      "paragraphs_count": 15
+    },
+    {
+      "index": 39,
+      "title": "三",
+      "file": "chapter-039.json",
+      "paragraphs_count": 22
+    },
+    {
+      "index": 40,
+      "title": "四",
+      "file": "chapter-040.json",
+      "paragraphs_count": 14
+    },
+    {
+      "index": 41,
+      "title": "五",
+      "file": "chapter-041.json",
+      "paragraphs_count": 12
+    },
+    {
+      "index": 42,
+      "title": "六",
+      "file": "chapter-042.json",
+      "paragraphs_count": 21
+    },
+    {
+      "index": 43,
+      "title": "七",
+      "file": "chapter-043.json",
+      "paragraphs_count": 18
+    },
+    {
+      "index": 44,
+      "title": "八",
+      "file": "chapter-044.json",
+      "paragraphs_count": 15
+    },
+    {
+      "index": 45,
+      "title": "九",
+      "file": "chapter-045.json",
+      "paragraphs_count": 20
+    },
+    {
+      "index": 46,
+      "title": "十",
+      "file": "chapter-046.json",
+      "paragraphs_count": 14
+    },
+    {
+      "index": 47,
+      "title": "十一",
+      "file": "chapter-047.json",
+      "paragraphs_count": 19
+    },
+    {
+      "index": 48,
+      "title": "十二",
+      "file": "chapter-048.json",
+      "paragraphs_count": 18
+    },
+    {
+      "index": 49,
+      "title": "十三",
+      "file": "chapter-049.json",
+      "paragraphs_count": 13
+    },
+    {
+      "index": 50,
+      "title": "十四",
+      "file": "chapter-050.json",
+      "paragraphs_count": 17
+    },
+    {
+      "index": 51,
+      "title": "十五",
+      "file": "chapter-051.json",
+      "paragraphs_count": 19
+    },
+    {
+      "index": 52,
+      "title": "十六",
+      "file": "chapter-052.json",
+      "paragraphs_count": 16
+    },
+    {
+      "index": 53,
+      "title": "十七",
+      "file": "chapter-053.json",
+      "paragraphs_count": 11
+    },
+    {
+      "index": 54,
+      "title": "十八",
+      "file": "chapter-054.json",
+      "paragraphs_count": 8
+    },
+    {
+      "index": 55,
+      "title": "一",
+      "file": "chapter-055.json",
+      "paragraphs_count": 3
+    },
+    {
+      "index": 56,
+      "title": "二",
+      "file": "chapter-056.json",
+      "paragraphs_count": 4
+    },
+    {
+      "index": 57,
+      "title": "三",
+      "file": "chapter-057.json",
+      "paragraphs_count": 4
+    },
+    {
+      "index": 58,
+      "title": "四",
+      "file": "chapter-058.json",
+      "paragraphs_count": 3
+    },
+    {
+      "index": 59,
+      "title": "五",
+      "file": "chapter-059.json",
+      "paragraphs_count": 7
+    },
+    {
+      "index": 60,
+      "title": "六",
+      "file": "chapter-060.json",
+      "paragraphs_count": 4
+    },
+    {
+      "index": 61,
+      "title": "七",
+      "file": "chapter-061.json",
+      "paragraphs_count": 7
+    },
+    {
+      "index": 62,
+      "title": "八",
+      "file": "chapter-062.json",
+      "paragraphs_count": 5
+    },
+    {
+      "index": 63,
+      "title": "九",
+      "file": "chapter-063.json",
+      "paragraphs_count": 6
+    },
+    {
+      "index": 64,
+      "title": "十",
+      "file": "chapter-064.json",
+      "paragraphs_count": 3
+    },
+    {
+      "index": 65,
+      "title": "十一",
+      "file": "chapter-065.json",
+      "paragraphs_count": 9
+    },
+    {
+      "index": 66,
+      "title": "十二",
+      "file": "chapter-066.json",
+      "paragraphs_count": 5
+    },
+    {
+      "index": 67,
+      "title": "十三",
+      "file": "chapter-067.json",
+      "paragraphs_count": 6
+    },
+    {
+      "index": 68,
+      "title": "十四",
+      "file": "chapter-068.json",
+      "paragraphs_count": 5
+    },
+    {
+      "index": 69,
+      "title": "十五",
+      "file": "chapter-069.json",
+      "paragraphs_count": 6
+    },
+    {
+      "index": 70,
+      "title": "十六",
+      "file": "chapter-070.json",
+      "paragraphs_count": 4
+    },
+    {
+      "index": 71,
+      "title": "十七",
+      "file": "chapter-071.json",
+      "paragraphs_count": 7
+    },
+    {
+      "index": 72,
+      "title": "十八",
+      "file": "chapter-072.json",
+      "paragraphs_count": 6
+    },
+    {
+      "index": 73,
+      "title": "十九",
+      "file": "chapter-073.json",
+      "paragraphs_count": 5
+    },
+    {
+      "index": 74,
+      "title": "二十",
+      "file": "chapter-074.json",
+      "paragraphs_count": 5
+    },
+    {
+      "index": 75,
+      "title": "二十一",
+      "file": "chapter-075.json",
+      "paragraphs_count": 5
+    },
+    {
+      "index": 76,
+      "title": "二十二",
+      "file": "chapter-076.json",
+      "paragraphs_count": 6
+    },
+    {
+      "index": 77,
+      "title": "二十三",
+      "file": "chapter-077.json",
+      "paragraphs_count": 7
+    },
+    {
+      "index": 78,
+      "title": "二十四",
+      "file": "chapter-078.json",
+      "paragraphs_count": 3
+    },
+    {
+      "index": 79,
+      "title": "二十五",
+      "file": "chapter-079.json",
+      "paragraphs_count": 6
+    },
+    {
+      "index": 80,
+      "title": "二十六",
+      "file": "chapter-080.json",
+      "paragraphs_count": 5
+    },
+    {
+      "index": 81,
+      "title": "二十七",
+      "file": "chapter-081.json",
+      "paragraphs_count": 5
+    },
+    {
+      "index": 82,
+      "title": "二十八",
+      "file": "chapter-082.json",
+      "paragraphs_count": 4
+    },
+    {
+      "index": 83,
+      "title": "二十九",
+      "file": "chapter-083.json",
+      "paragraphs_count": 5
+    },
+    {
+      "index": 84,
+      "title": "三十",
+      "file": "chapter-084.json",
+      "paragraphs_count": 4
+    },
+    {
+      "index": 85,
+      "title": "三十一",
+      "file": "chapter-085.json",
+      "paragraphs_count": 5
+    },
+    {
+      "index": 86,
+      "title": "三十二",
+      "file": "chapter-086.json",
+      "paragraphs_count": 4
+    },
+    {
+      "index": 87,
+      "title": "三十三",
+      "file": "chapter-087.json",
+      "paragraphs_count": 4
+    },
+    {
+      "index": 88,
+      "title": "三十四",
+      "file": "chapter-088.json",
+      "paragraphs_count": 3
+    },
+    {
+      "index": 89,
+      "title": "三十五",
+      "file": "chapter-089.json",
+      "paragraphs_count": 5
+    },
+    {
+      "index": 90,
+      "title": "三十六",
+      "file": "chapter-090.json",
+      "paragraphs_count": 6
+    },
+    {
+      "index": 91,
+      "title": "三十七",
+      "file": "chapter-091.json",
+      "paragraphs_count": 7
+    },
+    {
+      "index": 92,
+      "title": "三十八",
+      "file": "chapter-092.json",
+      "paragraphs_count": 5
+    },
+    {
+      "index": 93,
+      "title": "三十九",
+      "file": "chapter-093.json",
+      "paragraphs_count": 5
+    },
+    {
+      "index": 94,
+      "title": "四十",
+      "file": "chapter-094.json",
+      "paragraphs_count": 4
+    },
+    {
+      "index": 95,
+      "title": "四十一",
+      "file": "chapter-095.json",
+      "paragraphs_count": 8
+    },
+    {
+      "index": 96,
+      "title": "四十二",
+      "file": "chapter-096.json",
+      "paragraphs_count": 7
+    },
+    {
+      "index": 97,
+      "title": "四十三",
+      "file": "chapter-097.json",
+      "paragraphs_count": 6
+    },
+    {
+      "index": 98,
+      "title": "四十四",
+      "file": "chapter-098.json",
+      "paragraphs_count": 5
+    },
+    {
+      "index": 99,
+      "title": "四十五",
+      "file": "chapter-099.json",
+      "paragraphs_count": 5
+    },
+    {
+      "index": 100,
+      "title": "四十六",
+      "file": "chapter-100.json",
+      "paragraphs_count": 5
+    },
+    {
+      "index": 101,
+      "title": "四十七",
+      "file": "chapter-101.json",
+      "paragraphs_count": 7
+    },
+    {
+      "index": 102,
+      "title": "四十八",
+      "file": "chapter-102.json",
+      "paragraphs_count": 7
+    },
+    {
+      "index": 103,
+      "title": "四十九",
+      "file": "chapter-103.json",
+      "paragraphs_count": 5
+    },
+    {
+      "index": 104,
+      "title": "五十",
+      "file": "chapter-104.json",
+      "paragraphs_count": 7
+    },
+    {
+      "index": 105,
+      "title": "五十一",
+      "file": "chapter-105.json",
+      "paragraphs_count": 7
+    },
+    {
+      "index": 106,
+      "title": "五十二",
+      "file": "chapter-106.json",
+      "paragraphs_count": 4
+    },
+    {
+      "index": 107,
+      "title": "五十三",
+      "file": "chapter-107.json",
+      "paragraphs_count": 5
+    },
+    {
+      "index": 108,
+      "title": "五十四",
+      "file": "chapter-108.json",
+      "paragraphs_count": 7
+    },
+    {
+      "index": 109,
+      "title": "五十五",
+      "file": "chapter-109.json",
+      "paragraphs_count": 6
+    },
+    {
+      "index": 110,
+      "title": "五十六",
+      "file": "chapter-110.json",
+      "paragraphs_count": 8
+    }
+  ]
+}

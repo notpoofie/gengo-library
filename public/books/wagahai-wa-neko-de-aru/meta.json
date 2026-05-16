@@ -1,0 +1,95 @@
+{
+  "id": "wagahai-wa-neko-de-aru",
+  "title": {
+    "ja": "吾輩は猫である",
+    "fr": "Je suis un chat",
+    "en": "I Am a Cat",
+    "zh": "我是猫"
+  },
+  "author": {
+    "ja": "夏目漱石",
+    "fr": "Natsume Sōseki",
+    "en": "Natsume Sōseki",
+    "zh": "夏目漱石"
+  },
+  "summary": {
+    "fr": "Un chat sarcastique observe et commente la vie d'un professeur médiocre et de ses amis. Satire mordante de la société japonaise en pleine modernisation.",
+    "en": "A sardonic cat observes and comments on the life of a mediocre teacher and his friends. A biting satire of modernizing Japanese society.",
+    "zh": "一只讽刺的猫观察并评论一位平庸教师和他朋友们的生活。对日本现代化社会的辛辣讽刺。"
+  },
+  "language": "ja",
+  "level": "advanced",
+  "license": "public_domain",
+  "identifier": "aozora-wagahai-wa-neko-de-aru",
+  "chapters_count": 11,
+  "tokens_count": 206964,
+  "ingested_at": "2026-05-16T17:36:26.868999+00:00",
+  "chapters": [
+    {
+      "index": 1,
+      "title": "一",
+      "file": "chapter-001.json",
+      "paragraphs_count": 33
+    },
+    {
+      "index": 2,
+      "title": "二",
+      "file": "chapter-002.json",
+      "paragraphs_count": 152
+    },
+    {
+      "index": 3,
+      "title": "三",
+      "file": "chapter-003.json",
+      "paragraphs_count": 31
+    },
+    {
+      "index": 4,
+      "title": "四",
+      "file": "chapter-004.json",
+      "paragraphs_count": 208
+    },
+    {
+      "index": 5,
+      "title": "五",
+      "file": "chapter-005.json",
+      "paragraphs_count": 215
+    },
+    {
+      "index": 6,
+      "title": "六",
+      "file": "chapter-006.json",
+      "paragraphs_count": 48
+    },
+    {
+      "index": 7,
+      "title": "七",
+      "file": "chapter-007.json",
+      "paragraphs_count": 59
+    },
+    {
+      "index": 8,
+      "title": "八",
+      "file": "chapter-008.json",
+      "paragraphs_count": 183
+    },
+    {
+      "index": 9,
+      "title": "九",
+      "file": "chapter-009.json",
+      "paragraphs_count": 230
+    },
+    {
+      "index": 10,
+      "title": "十",
+      "file": "chapter-010.json",
+      "paragraphs_count": 418
+    },
+    {
+      "index": 11,
+      "title": "十一",
+      "file": "chapter-011.json",
+      "paragraphs_count": 668
+    }
+  ]
+}

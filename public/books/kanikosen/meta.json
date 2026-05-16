@@ -1,0 +1,95 @@
+{
+  "id": "kanikosen",
+  "title": {
+    "ja": "蟹工船",
+    "fr": "Le Bateau-Usine",
+    "en": "The Crab Cannery Ship",
+    "zh": "蟹工船"
+  },
+  "author": {
+    "ja": "小林多喜二",
+    "fr": "Kobayashi Takiji",
+    "en": "Kobayashi Takiji",
+    "zh": "小林多喜二"
+  },
+  "summary": {
+    "fr": "À bord d'un bateau-usine de pêche au crabe dans les mers glaciales du nord, des ouvriers exploités finissent par se révolter. Roman prolétarien classique.",
+    "en": "On a crab cannery ship in the freezing northern seas, exploited workers eventually rise up in rebellion. A classic of proletarian literature.",
+    "zh": "在北方冰冷海域的蟹工船上，被剥削的工人最终奋起反抗。无产阶级文学经典之作。"
+  },
+  "language": "ja",
+  "level": "beginner",
+  "license": "public_domain",
+  "identifier": "aozora-kanikosen",
+  "chapters_count": 11,
+  "tokens_count": 41392,
+  "ingested_at": "2026-05-16T17:36:10.005167+00:00",
+  "chapters": [
+    {
+      "index": 1,
+      "title": "一",
+      "file": "chapter-001.json",
+      "paragraphs_count": 94
+    },
+    {
+      "index": 2,
+      "title": "二",
+      "file": "chapter-002.json",
+      "paragraphs_count": 72
+    },
+    {
+      "index": 3,
+      "title": "三",
+      "file": "chapter-003.json",
+      "paragraphs_count": 111
+    },
+    {
+      "index": 4,
+      "title": "四",
+      "file": "chapter-004.json",
+      "paragraphs_count": 106
+    },
+    {
+      "index": 5,
+      "title": "五",
+      "file": "chapter-005.json",
+      "paragraphs_count": 114
+    },
+    {
+      "index": 6,
+      "title": "六",
+      "file": "chapter-006.json",
+      "paragraphs_count": 46
+    },
+    {
+      "index": 7,
+      "title": "七",
+      "file": "chapter-007.json",
+      "paragraphs_count": 63
+    },
+    {
+      "index": 8,
+      "title": "八",
+      "file": "chapter-008.json",
+      "paragraphs_count": 34
+    },
+    {
+      "index": 9,
+      "title": "九",
+      "file": "chapter-009.json",
+      "paragraphs_count": 50
+    },
+    {
+      "index": 10,
+      "title": "十",
+      "file": "chapter-010.json",
+      "paragraphs_count": 141
+    },
+    {
+      "index": 11,
+      "title": "附記",
+      "file": "chapter-011.json",
+      "paragraphs_count": 7
+    }
+  ]
+}

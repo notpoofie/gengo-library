@@ -1,0 +1,35 @@
+{
+  "id": "sangetsuki",
+  "title": {
+    "ja": "山月記",
+    "fr": "Le Récit de la Lune sur la Montagne",
+    "en": "The Moon over the Mountain",
+    "zh": "山月记"
+  },
+  "author": {
+    "ja": "中島敦",
+    "fr": "Nakajima Atsushi",
+    "en": "Nakajima Atsushi",
+    "zh": "中岛敦"
+  },
+  "summary": {
+    "fr": "Un poète raté se transforme en tigre et raconte sa déchéance à un ancien ami. Méditation sur l'orgueil et l'art.",
+    "en": "A failed poet transforms into a tiger and tells the story of his downfall to an old friend. A meditation on pride and art.",
+    "zh": "一位失败的诗人变成了老虎，向旧友讲述自己的堕落。关于傲慢与艺术的沉思。"
+  },
+  "language": "ja",
+  "level": "intermediate",
+  "license": "public_domain",
+  "identifier": "aozora-sangetsuki",
+  "chapters_count": 1,
+  "tokens_count": 3997,
+  "ingested_at": "2026-05-16T17:36:01.999472+00:00",
+  "chapters": [
+    {
+      "index": 1,
+      "title": "第1章",
+      "file": "chapter-001.json",
+      "paragraphs_count": 25
+    }
+  ]
+}

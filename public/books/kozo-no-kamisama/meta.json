@@ -1,0 +1,35 @@
+{
+  "id": "kozo-no-kamisama",
+  "title": {
+    "ja": "小僧の神様",
+    "fr": "Le Dieu de l'Apprenti",
+    "en": "The Apprentice's God",
+    "zh": "小僧的神"
+  },
+  "author": {
+    "ja": "志賀直哉",
+    "fr": "Shiga Naoya",
+    "en": "Shiga Naoya",
+    "zh": "志贺直哉"
+  },
+  "summary": {
+    "fr": "Un jeune apprenti rêve de manger des sushis trop chers pour lui. Un client compatissant lui offre ce festin, mais la rencontre laisse un sentiment trouble. Court récit emblématique du style de Shiga.",
+    "en": "A young apprentice dreams of eating sushi he cannot afford. A sympathetic customer treats him to it, but the encounter leaves an uncomfortable feeling. An emblematic short story of Shiga's style.",
+    "zh": "一位年轻学徒梦想着吃买不起的寿司。一位富有同情心的顾客请他吃了一顿，但这次相遇却留下了复杂的感受。志贺写作风格的代表短篇。"
+  },
+  "language": "ja",
+  "level": "advanced",
+  "license": "public_domain",
+  "identifier": "aozora-kozo-no-kamisama",
+  "chapters_count": 1,
+  "tokens_count": 4496,
+  "ingested_at": "2026-05-16T17:36:30.596085+00:00",
+  "chapters": [
+    {
+      "index": 1,
+      "title": "第1章",
+      "file": "chapter-001.json",
+      "paragraphs_count": 26
+    }
+  ]
+}

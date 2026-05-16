@@ -1,0 +1,35 @@
+{
+  "id": "takasebune",
+  "title": {
+    "ja": "高瀬舟",
+    "fr": "La Barque sur la Takase",
+    "en": "The Boat on the Takase River",
+    "zh": "高濑舟"
+  },
+  "author": {
+    "ja": "森鴎外",
+    "fr": "Mori Ōgai",
+    "en": "Mori Ōgai",
+    "zh": "森鸥外"
+  },
+  "summary": {
+    "fr": "Un fonctionnaire escorte un prisonnier condamné à l'exil sur une barque ; leur conversation pose la question de l'euthanasie et de la compassion.",
+    "en": "An official escorts a prisoner sentenced to exile on a small boat; their conversation raises questions of euthanasia and compassion.",
+    "zh": "一名官员押送一位被判流放的犯人乘船而行；他们的对话引发了关于安乐死与同情的思考。"
+  },
+  "language": "ja",
+  "level": "intermediate",
+  "license": "public_domain",
+  "identifier": "aozora-takasebune",
+  "chapters_count": 1,
+  "tokens_count": 5868,
+  "ingested_at": "2026-05-16T17:36:03.893365+00:00",
+  "chapters": [
+    {
+      "index": 1,
+      "title": "第1章",
+      "file": "chapter-001.json",
+      "paragraphs_count": 40
+    }
+  ]
+}

@@ -1,0 +1,83 @@
+{
+  "id": "ginga-tetsudo-no-yoru",
+  "title": {
+    "ja": "銀河鉄道の夜",
+    "fr": "Train de Nuit dans la Voie Lactée",
+    "en": "Night on the Galactic Railroad",
+    "zh": "银河铁道之夜"
+  },
+  "author": {
+    "ja": "宮沢賢治",
+    "fr": "Miyazawa Kenji",
+    "en": "Miyazawa Kenji",
+    "zh": "宫泽贤治"
+  },
+  "summary": {
+    "fr": "Un garçon solitaire voyage à travers les étoiles dans un train mystérieux et rencontre l'âme de son ami disparu. Conte poétique et métaphysique.",
+    "en": "A lonely boy travels through the stars on a mysterious train and meets the soul of his lost friend. A poetic, metaphysical tale.",
+    "zh": "一个孤独的男孩乘坐神秘列车穿越星空，遇见已逝朋友的灵魂。一个诗意而形而上学的故事。"
+  },
+  "language": "ja",
+  "level": "intermediate",
+  "license": "public_domain",
+  "identifier": "aozora-ginga-tetsudo-no-yoru",
+  "chapters_count": 9,
+  "tokens_count": 22968,
+  "ingested_at": "2026-05-16T17:36:01.023314+00:00",
+  "chapters": [
+    {
+      "index": 1,
+      "title": "Chapitre 1",
+      "file": "chapter-001.json",
+      "paragraphs_count": 18
+    },
+    {
+      "index": 2,
+      "title": "Chapitre 2",
+      "file": "chapter-002.json",
+      "paragraphs_count": 10
+    },
+    {
+      "index": 3,
+      "title": "Chapitre 3",
+      "file": "chapter-003.json",
+      "paragraphs_count": 39
+    },
+    {
+      "index": 4,
+      "title": "Chapitre 4",
+      "file": "chapter-004.json",
+      "paragraphs_count": 29
+    },
+    {
+      "index": 5,
+      "title": "Chapitre 5",
+      "file": "chapter-005.json",
+      "paragraphs_count": 9
+    },
+    {
+      "index": 6,
+      "title": "Chapitre 6",
+      "file": "chapter-006.json",
+      "paragraphs_count": 32
+    },
+    {
+      "index": 7,
+      "title": "Chapitre 7",
+      "file": "chapter-007.json",
+      "paragraphs_count": 47
+    },
+    {
+      "index": 8,
+      "title": "Chapitre 8",
+      "file": "chapter-008.json",
+      "paragraphs_count": 54
+    },
+    {
+      "index": 9,
+      "title": "Chapitre 9",
+      "file": "chapter-009.json",
+      "paragraphs_count": 220
+    }
+  ]
+}

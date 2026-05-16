@@ -1,0 +1,89 @@
+{
+  "id": "nijushi-no-hitomi",
+  "title": {
+    "ja": "二十四の瞳",
+    "fr": "Vingt-quatre Prunelles",
+    "en": "Twenty-Four Eyes",
+    "zh": "二十四只眼睛"
+  },
+  "author": {
+    "ja": "壺井栄",
+    "fr": "Tsuboi Sakae",
+    "en": "Tsuboi Sakae",
+    "zh": "壶井荣"
+  },
+  "summary": {
+    "fr": "Une jeune institutrice d'une petite île japonaise accompagne ses douze élèves à travers les tourments de la guerre et de l'après-guerre.",
+    "en": "A young teacher on a small Japanese island accompanies her twelve students through the turmoils of war and post-war life.",
+    "zh": "日本一个小岛上的年轻教师，陪伴她的十二个学生经历战争与战后的动荡岁月。"
+  },
+  "language": "ja",
+  "level": "intermediate",
+  "license": "public_domain",
+  "identifier": "aozora-nijushi-no-hitomi",
+  "chapters_count": 10,
+  "tokens_count": 69959,
+  "ingested_at": "2026-05-16T17:36:07.585909+00:00",
+  "chapters": [
+    {
+      "index": 1,
+      "title": "一　小石先生",
+      "file": "chapter-001.json",
+      "paragraphs_count": 170
+    },
+    {
+      "index": 2,
+      "title": "二　魔法の橋",
+      "file": "chapter-002.json",
+      "paragraphs_count": 142
+    },
+    {
+      "index": 3,
+      "title": "三　米五ン合豆一升",
+      "file": "chapter-003.json",
+      "paragraphs_count": 209
+    },
+    {
+      "index": 4,
+      "title": "四　わかれ",
+      "file": "chapter-004.json",
+      "paragraphs_count": 182
+    },
+    {
+      "index": 5,
+      "title": "五　花の絵",
+      "file": "chapter-005.json",
+      "paragraphs_count": 164
+    },
+    {
+      "index": 6,
+      "title": "六　月夜の蟹",
+      "file": "chapter-006.json",
+      "paragraphs_count": 236
+    },
+    {
+      "index": 7,
+      "title": "七　羽ばたき",
+      "file": "chapter-007.json",
+      "paragraphs_count": 190
+    },
+    {
+      "index": 8,
+      "title": "八　七重八重",
+      "file": "chapter-008.json",
+      "paragraphs_count": 146
+    },
+    {
+      "index": 9,
+      "title": "九　泣きみそ先生",
+      "file": "chapter-009.json",
+      "paragraphs_count": 143
+    },
+    {
+      "index": 10,
+      "title": "十　ある晴れた日に",
+      "file": "chapter-010.json",
+      "paragraphs_count": 236
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "id": "ningen-shikkaku",
+  "title": {
+    "ja": "人間失格",
+    "fr": "La Déchéance d'un Homme",
+    "en": "No Longer Human",
+    "zh": "人间失格"
+  },
+  "author": {
+    "ja": "太宰治",
+    "fr": "Dazai Osamu",
+    "en": "Dazai Osamu",
+    "zh": "太宰治"
+  },
+  "summary": {
+    "fr": "Les carnets d'un homme incapable de comprendre les autres êtres humains, qui sombre dans l'alcool, la drogue et le désespoir. Une des œuvres les plus sombres du Japon moderne.",
+    "en": "The notebooks of a man unable to understand other human beings, who sinks into alcohol, drugs, and despair. One of modern Japan's darkest works.",
+    "zh": "一个无法理解他人的男人留下的笔记，他逐渐沉沦于酒精、毒品与绝望之中。日本现代文学最阴郁的作品之一。"
+  },
+  "language": "ja",
+  "level": "advanced",
+  "license": "public_domain",
+  "identifier": "aozora-ningen-shikkaku",
+  "chapters_count": 6,
+  "tokens_count": 46735,
+  "ingested_at": "2026-05-16T17:36:29.559884+00:00",
+  "chapters": [
+    {
+      "index": 1,
+      "title": "はしがき",
+      "file": "chapter-001.json",
+      "paragraphs_count": 10
+    },
+    {
+      "index": 2,
+      "title": "第一の手記",
+      "file": "chapter-002.json",
+      "paragraphs_count": 50
+    },
+    {
+      "index": 3,
+      "title": "第二の手記",
+      "file": "chapter-003.json",
+      "paragraphs_count": 226
+    },
+    {
+      "index": 4,
+      "title": "一",
+      "file": "chapter-004.json",
+      "paragraphs_count": 268
+    },
+    {
+      "index": 5,
+      "title": "二",
+      "file": "chapter-005.json",
+      "paragraphs_count": 223
+    },
+    {
+      "index": 6,
+      "title": "あとがき",
+      "file": "chapter-006.json",
+      "paragraphs_count": 26
+    }
+  ]
+}

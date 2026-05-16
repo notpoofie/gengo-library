@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-05-16T02:26:24.198194+00:00",
+  "updated_at": "2026-05-16T17:36:30.603172+00:00",
   "books": [
     {
       "id": "botchan",
@@ -55,6 +55,32 @@
       "path": "books/chumon-no-oi-ryoriten/meta.json"
     },
     {
+      "id": "ginga-tetsudo-no-yoru",
+      "title": {
+        "ja": "銀河鉄道の夜",
+        "fr": "Train de Nuit dans la Voie Lactée",
+        "en": "Night on the Galactic Railroad",
+        "zh": "银河铁道之夜"
+      },
+      "author": {
+        "ja": "宮沢賢治",
+        "fr": "Miyazawa Kenji",
+        "en": "Miyazawa Kenji",
+        "zh": "宫泽贤治"
+      },
+      "summary": {
+        "fr": "Un garçon solitaire voyage à travers les étoiles dans un train mystérieux et rencontre l'âme de son ami disparu. Conte poétique et métaphysique.",
+        "en": "A lonely boy travels through the stars on a mysterious train and meets the soul of his lost friend. A poetic, metaphysical tale.",
+        "zh": "一个孤独的男孩乘坐神秘列车穿越星空，遇见已逝朋友的灵魂。一个诗意而形而上学的故事。"
+      },
+      "level": "intermediate",
+      "license": "public_domain",
+      "language": "ja",
+      "chapters_count": 9,
+      "tokens_count": 22968,
+      "path": "books/ginga-tetsudo-no-yoru/meta.json"
+    },
+    {
       "id": "hashire-melos",
       "title": {
         "ja": "走れメロス",
@@ -79,6 +105,84 @@
       "chapters_count": 1,
       "tokens_count": 6439,
       "path": "books/hashire-melos/meta.json"
+    },
+    {
+      "id": "kanikosen",
+      "title": {
+        "ja": "蟹工船",
+        "fr": "Le Bateau-Usine",
+        "en": "The Crab Cannery Ship",
+        "zh": "蟹工船"
+      },
+      "author": {
+        "ja": "小林多喜二",
+        "fr": "Kobayashi Takiji",
+        "en": "Kobayashi Takiji",
+        "zh": "小林多喜二"
+      },
+      "summary": {
+        "fr": "À bord d'un bateau-usine de pêche au crabe dans les mers glaciales du nord, des ouvriers exploités finissent par se révolter. Roman prolétarien classique.",
+        "en": "On a crab cannery ship in the freezing northern seas, exploited workers eventually rise up in rebellion. A classic of proletarian literature.",
+        "zh": "在北方冰冷海域的蟹工船上，被剥削的工人最终奋起反抗。无产阶级文学经典之作。"
+      },
+      "level": "beginner",
+      "license": "public_domain",
+      "language": "ja",
+      "chapters_count": 11,
+      "tokens_count": 41392,
+      "path": "books/kanikosen/meta.json"
+    },
+    {
+      "id": "kokoro",
+      "title": {
+        "ja": "こころ",
+        "fr": "Le Pauvre Cœur des Hommes",
+        "en": "Kokoro",
+        "zh": "心"
+      },
+      "author": {
+        "ja": "夏目漱石",
+        "fr": "Natsume Sōseki",
+        "en": "Natsume Sōseki",
+        "zh": "夏目漱石"
+      },
+      "summary": {
+        "fr": "Un étudiant noue une amitié étrange avec un homme solitaire surnommé Sensei. Une exploration profonde de la culpabilité, de l'amitié et de la modernité japonaise.",
+        "en": "A student forms a strange friendship with a solitary man known as Sensei. A profound exploration of guilt, friendship, and Japanese modernity.",
+        "zh": "一位学生与一位名为先生的孤独男子建立起奇特的友谊。对内疚、友情与日本现代性的深刻探索。"
+      },
+      "level": "advanced",
+      "license": "public_domain",
+      "language": "ja",
+      "chapters_count": 110,
+      "tokens_count": 106885,
+      "path": "books/kokoro/meta.json"
+    },
+    {
+      "id": "kozo-no-kamisama",
+      "title": {
+        "ja": "小僧の神様",
+        "fr": "Le Dieu de l'Apprenti",
+        "en": "The Apprentice's God",
+        "zh": "小僧的神"
+      },
+      "author": {
+        "ja": "志賀直哉",
+        "fr": "Shiga Naoya",
+        "en": "Shiga Naoya",
+        "zh": "志贺直哉"
+      },
+      "summary": {
+        "fr": "Un jeune apprenti rêve de manger des sushis trop chers pour lui. Un client compatissant lui offre ce festin, mais la rencontre laisse un sentiment trouble. Court récit emblématique du style de Shiga.",
+        "en": "A young apprentice dreams of eating sushi he cannot afford. A sympathetic customer treats him to it, but the encounter leaves an uncomfortable feeling. An emblematic short story of Shiga's style.",
+        "zh": "一位年轻学徒梦想着吃买不起的寿司。一位富有同情心的顾客请他吃了一顿，但这次相遇却留下了复杂的感受。志贺写作风格的代表短篇。"
+      },
+      "level": "advanced",
+      "license": "public_domain",
+      "language": "ja",
+      "chapters_count": 1,
+      "tokens_count": 4496,
+      "path": "books/kozo-no-kamisama/meta.json"
     },
     {
       "id": "kumo-no-ito",
@@ -131,6 +235,162 @@
       "chapters_count": 4,
       "tokens_count": 3388,
       "path": "books/momotaro-kusuyama/meta.json"
+    },
+    {
+      "id": "nijushi-no-hitomi",
+      "title": {
+        "ja": "二十四の瞳",
+        "fr": "Vingt-quatre Prunelles",
+        "en": "Twenty-Four Eyes",
+        "zh": "二十四只眼睛"
+      },
+      "author": {
+        "ja": "壺井栄",
+        "fr": "Tsuboi Sakae",
+        "en": "Tsuboi Sakae",
+        "zh": "壶井荣"
+      },
+      "summary": {
+        "fr": "Une jeune institutrice d'une petite île japonaise accompagne ses douze élèves à travers les tourments de la guerre et de l'après-guerre.",
+        "en": "A young teacher on a small Japanese island accompanies her twelve students through the turmoils of war and post-war life.",
+        "zh": "日本一个小岛上的年轻教师，陪伴她的十二个学生经历战争与战后的动荡岁月。"
+      },
+      "level": "intermediate",
+      "license": "public_domain",
+      "language": "ja",
+      "chapters_count": 10,
+      "tokens_count": 69959,
+      "path": "books/nijushi-no-hitomi/meta.json"
+    },
+    {
+      "id": "ningen-shikkaku",
+      "title": {
+        "ja": "人間失格",
+        "fr": "La Déchéance d'un Homme",
+        "en": "No Longer Human",
+        "zh": "人间失格"
+      },
+      "author": {
+        "ja": "太宰治",
+        "fr": "Dazai Osamu",
+        "en": "Dazai Osamu",
+        "zh": "太宰治"
+      },
+      "summary": {
+        "fr": "Les carnets d'un homme incapable de comprendre les autres êtres humains, qui sombre dans l'alcool, la drogue et le désespoir. Une des œuvres les plus sombres du Japon moderne.",
+        "en": "The notebooks of a man unable to understand other human beings, who sinks into alcohol, drugs, and despair. One of modern Japan's darkest works.",
+        "zh": "一个无法理解他人的男人留下的笔记，他逐渐沉沦于酒精、毒品与绝望之中。日本现代文学最阴郁的作品之一。"
+      },
+      "level": "advanced",
+      "license": "public_domain",
+      "language": "ja",
+      "chapters_count": 6,
+      "tokens_count": 46735,
+      "path": "books/ningen-shikkaku/meta.json"
+    },
+    {
+      "id": "rashomon",
+      "title": {
+        "ja": "羅生門",
+        "fr": "Rashōmon",
+        "en": "Rashōmon",
+        "zh": "罗生门"
+      },
+      "author": {
+        "ja": "芥川龍之介",
+        "fr": "Akutagawa Ryūnosuke",
+        "en": "Akutagawa Ryūnosuke",
+        "zh": "芥川龙之介"
+      },
+      "summary": {
+        "fr": "À l'ombre de la porte de Rashōmon dans le Kyoto médiéval, un serviteur sans emploi rencontre une vieille femme et fait un choix moral inattendu.",
+        "en": "In the shadow of the Rashōmon gate in medieval Kyoto, an unemployed servant meets an old woman and makes an unexpected moral choice.",
+        "zh": "在中世纪京都的罗生门阴影下，一位失业仆人遇到一位老妇人，做出了意想不到的道德选择。"
+      },
+      "level": "intermediate",
+      "license": "public_domain",
+      "language": "ja",
+      "chapters_count": 1,
+      "tokens_count": 3912,
+      "path": "books/rashomon/meta.json"
+    },
+    {
+      "id": "sangetsuki",
+      "title": {
+        "ja": "山月記",
+        "fr": "Le Récit de la Lune sur la Montagne",
+        "en": "The Moon over the Mountain",
+        "zh": "山月记"
+      },
+      "author": {
+        "ja": "中島敦",
+        "fr": "Nakajima Atsushi",
+        "en": "Nakajima Atsushi",
+        "zh": "中岛敦"
+      },
+      "summary": {
+        "fr": "Un poète raté se transforme en tigre et raconte sa déchéance à un ancien ami. Méditation sur l'orgueil et l'art.",
+        "en": "A failed poet transforms into a tiger and tells the story of his downfall to an old friend. A meditation on pride and art.",
+        "zh": "一位失败的诗人变成了老虎，向旧友讲述自己的堕落。关于傲慢与艺术的沉思。"
+      },
+      "level": "intermediate",
+      "license": "public_domain",
+      "language": "ja",
+      "chapters_count": 1,
+      "tokens_count": 3997,
+      "path": "books/sangetsuki/meta.json"
+    },
+    {
+      "id": "takasebune",
+      "title": {
+        "ja": "高瀬舟",
+        "fr": "La Barque sur la Takase",
+        "en": "The Boat on the Takase River",
+        "zh": "高濑舟"
+      },
+      "author": {
+        "ja": "森鴎外",
+        "fr": "Mori Ōgai",
+        "en": "Mori Ōgai",
+        "zh": "森鸥外"
+      },
+      "summary": {
+        "fr": "Un fonctionnaire escorte un prisonnier condamné à l'exil sur une barque ; leur conversation pose la question de l'euthanasie et de la compassion.",
+        "en": "An official escorts a prisoner sentenced to exile on a small boat; their conversation raises questions of euthanasia and compassion.",
+        "zh": "一名官员押送一位被判流放的犯人乘船而行；他们的对话引发了关于安乐死与同情的思考。"
+      },
+      "level": "intermediate",
+      "license": "public_domain",
+      "language": "ja",
+      "chapters_count": 1,
+      "tokens_count": 5868,
+      "path": "books/takasebune/meta.json"
+    },
+    {
+      "id": "wagahai-wa-neko-de-aru",
+      "title": {
+        "ja": "吾輩は猫である",
+        "fr": "Je suis un chat",
+        "en": "I Am a Cat",
+        "zh": "我是猫"
+      },
+      "author": {
+        "ja": "夏目漱石",
+        "fr": "Natsume Sōseki",
+        "en": "Natsume Sōseki",
+        "zh": "夏目漱石"
+      },
+      "summary": {
+        "fr": "Un chat sarcastique observe et commente la vie d'un professeur médiocre et de ses amis. Satire mordante de la société japonaise en pleine modernisation.",
+        "en": "A sardonic cat observes and comments on the life of a mediocre teacher and his friends. A biting satire of modernizing Japanese society.",
+        "zh": "一只讽刺的猫观察并评论一位平庸教师和他朋友们的生活。对日本现代化社会的辛辣讽刺。"
+      },
+      "level": "advanced",
+      "license": "public_domain",
+      "language": "ja",
+      "chapters_count": 11,
+      "tokens_count": 206964,
+      "path": "books/wagahai-wa-neko-de-aru/meta.json"
     }
   ]
 }

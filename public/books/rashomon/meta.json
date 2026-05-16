@@ -1,0 +1,35 @@
+{
+  "id": "rashomon",
+  "title": {
+    "ja": "羅生門",
+    "fr": "Rashōmon",
+    "en": "Rashōmon",
+    "zh": "罗生门"
+  },
+  "author": {
+    "ja": "芥川龍之介",
+    "fr": "Akutagawa Ryūnosuke",
+    "en": "Akutagawa Ryūnosuke",
+    "zh": "芥川龙之介"
+  },
+  "summary": {
+    "fr": "À l'ombre de la porte de Rashōmon dans le Kyoto médiéval, un serviteur sans emploi rencontre une vieille femme et fait un choix moral inattendu.",
+    "en": "In the shadow of the Rashōmon gate in medieval Kyoto, an unemployed servant meets an old woman and makes an unexpected moral choice.",
+    "zh": "在中世纪京都的罗生门阴影下，一位失业仆人遇到一位老妇人，做出了意想不到的道德选择。"
+  },
+  "language": "ja",
+  "level": "intermediate",
+  "license": "public_domain",
+  "identifier": "aozora-rashomon",
+  "chapters_count": 1,
+  "tokens_count": 3912,
+  "ingested_at": "2026-05-16T17:36:02.955061+00:00",
+  "chapters": [
+    {
+      "index": 1,
+      "title": "第1章",
+      "file": "chapter-001.json",
+      "paragraphs_count": 37
+    }
+  ]
+}
